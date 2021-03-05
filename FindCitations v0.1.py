@@ -5,7 +5,6 @@ import csv
 
 path = input('Input absolute path to folder: ')
 files = os.listdir(path)
-files.append('RFC 7252 Constrained Application Protocol')
 
 with open('relation.csv', 'a', newline='') as csvfile:
     writer = csv.writer(csvfile, dialect='excel')
